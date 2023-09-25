@@ -4,11 +4,13 @@ import { useCabins } from './useCabins'
 import Table from '../../ui/Table'
 import Menus from '../../ui/Menus'
 import { useSearchParams } from 'react-router-dom'
+import Empty from '../../ui/Empty'
 
 const CabinTable = () => {
   const { isLoading, cabins } = useCabins()
   const [searchParams] = useSearchParams()
   if (isLoading) return <Spinner />
+  if (!cabins.length) return <Empty resourceName="cabin" />
   // filter function
   const filterValue = searchParams.get('discount') || 'all'
   let filteredCabins
@@ -32,6 +34,7 @@ const CabinTable = () => {
     typeof cabins[0][field] === 'number'
       ? filteredCabins.sort(compareNumbers)
       : filteredCabins.sort(compareText)
+
   return (
     <Menus>
       <Table columns="0.6fr 1.8fr 2.2fr 1fr 1fr 1fr">
