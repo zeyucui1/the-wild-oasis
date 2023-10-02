@@ -7,7 +7,7 @@ export function useUser() {
     data: user,
     error,
   } = useQuery({
-    queryKey: 'user',
+    queryKey: ['user'],
     queryFn: () => getCurrentUser(),
   })
   return { user, isLoading, isAuthenticated: user?.role === 'authenticated' }
