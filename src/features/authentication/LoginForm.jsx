@@ -9,7 +9,7 @@ import { set } from 'date-fns'
 
 function LoginForm() {
   const [email, setEmail] = useState('zeyu@example.com')
-  const [password, setPassword] = useState('12345')
+  const [password, setPassword] = useState('11111111')
   const { login, isLoading } = useLogin()
 
   function handleSubmit(e) {
