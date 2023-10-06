@@ -22,7 +22,7 @@ To start the project, use the following commands:
 
 ```bash
 # Start the frontend application
-cd client
+
 npm install
 npm run dev
 
