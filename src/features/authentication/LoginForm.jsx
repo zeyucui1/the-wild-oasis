@@ -8,8 +8,8 @@ import { useLogin } from './useLogin'
 import { set } from 'date-fns'
 
 function LoginForm() {
-  const [email, setEmail] = useState('zeyu@example.com')
-  const [password, setPassword] = useState('11111111')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const { login, isLoading } = useLogin()
 
   function handleSubmit(e) {

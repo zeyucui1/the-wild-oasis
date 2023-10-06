@@ -28,3 +28,6 @@ npm run dev
 
 
 ```
+# Login information
+- test email: 'zeyu@example.com'
+- test password: 11111111
