@@ -132,3 +132,4 @@ This project is open-sourced under the [MIT license](https://opensource.org/lice
 ## Deployed Version 🚀
 
 Live demo (Feel free to visit) 👉🏻 : the-wild-oasis-hotel-8bs0pozww-zeyu-cuis-projects.vercel.app
+
